@@ -7,7 +7,7 @@ import {
   TableRow,
 } from './TrensactionsHistory.styled';
 
-export const TransactionHistory = ({ transactions }) => {
+export const TransactionsHistory = ({ transactions }) => {
   return (
     <Table>
       <TableHead>
