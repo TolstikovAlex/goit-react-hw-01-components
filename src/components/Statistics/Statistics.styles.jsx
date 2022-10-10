@@ -9,6 +9,7 @@ export const StatsSection = styled.section`
 `;
 
 export const Title = styled.h2`
+  margin: 4px;
   padding-top: ${p => p.theme.space[5]}px;
   padding-bottom: ${p => p.theme.space[5]}px;
   text-transform: uppercase;
