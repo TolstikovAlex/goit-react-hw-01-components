@@ -1,7 +1,14 @@
 import PropTypes from 'prop-types';
-export const StatisticsListItem = ({ data }) => {
-  <>
-    <span className="label">.docx</span>
-    <span className="percentage">4%</span>
-  </>;
+import { Label, Percent } from './StatisticsListItem.styled';
+export const StatisticsListItem = ({ label, percentage }) => {
+  return (
+    <>
+      <Label>{label}</Label>
+      <Percent>{percentage}</Percent>
+    </>
+  );
+};
+StatisticsListItem.propTypes = {
+  label: PropTypes.string.isRequired,
+  percentage: PropTypes.number.isRequired,
 };

@@ -1,36 +1,44 @@
 import PropTypes from 'prop-types';
+import {
+  Avatar,
+  Location,
+  Name,
+  ProfileCard,
+  ProfileMain,
+  Stats,
+  StatsItem,
+  StatsLabel,
+  StatsValue,
+  Tag,
+} from './Profile.styled';
 
 export const Profile = ({
   user: { username, tag, location, avatar, stats },
 }) => {
   return (
-    <div className="profile">
-      <div className="description">
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
-          alt="User avatar"
-          className="avatar"
-        />
-        <p className="name">{username}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
-      </div>
+    <ProfileCard>
+      <ProfileMain>
+        <Avatar src={avatar} alt={username} />
+        <Name>{username}</Name>
+        <Tag>@{tag}</Tag>
+        <Location>{location}</Location>
+      </ProfileMain>
 
-      <ul className="stats">
-        <li>
-          <span className="label">Followers</span>
-          <span className="quantity">{stats.followers}</span>
-        </li>
-        <li>
-          <span className="label">Views</span>
-          <span className="quantity">{stats.views}</span>
-        </li>
-        <li>
-          <span className="label">Likes</span>
-          <span className="quantity">{stats.likes}</span>
-        </li>
-      </ul>
-    </div>
+      <Stats>
+        <StatsItem>
+          <StatsLabel>Followers</StatsLabel>
+          <StatsValue>{stats.followers}</StatsValue>
+        </StatsItem>
+        <StatsItem>
+          <StatsLabel>Views</StatsLabel>
+          <StatsValue>{stats.views}</StatsValue>
+        </StatsItem>
+        <StatsItem>
+          <StatsLabel>Likes</StatsLabel>
+          <StatsValue>{stats.likes}</StatsValue>
+        </StatsItem>
+      </Stats>
+    </ProfileCard>
   );
 };
 Profile.propTypes = {
