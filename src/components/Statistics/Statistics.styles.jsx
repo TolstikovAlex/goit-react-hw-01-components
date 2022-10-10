@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const StatsSection = styled.section`
+  margin: 4px;
   padding-top: ${p => p.theme.space[5]}px;
   padding-bottom: ${p => p.theme.space[5]}px;
   width: ${p => p.theme.sizes.normal};
