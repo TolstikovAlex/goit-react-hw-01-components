@@ -15,5 +15,3 @@ export const Title = styled.h2`
   text-align: center;
   color: ${p => p.theme.colors.secondary};
 `;
-// export const Label = styled.span``;
-// export const Label = styled.span``;
