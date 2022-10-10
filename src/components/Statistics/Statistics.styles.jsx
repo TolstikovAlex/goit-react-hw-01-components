@@ -5,6 +5,9 @@ export const StatsSection = styled.section`
   padding-bottom: ${p => p.theme.space[5]}px;
   width: ${p => p.theme.sizes.normal};
   margin: 0 auto;
+  box-shadow: ${p => p.theme.shadows.normal};
+  margin-top: ${p => p.theme.space[4]}px;
+  margin-bottom: ${p => p.theme.space[4]}px;
 `;
 
 export const Title = styled.h2`
