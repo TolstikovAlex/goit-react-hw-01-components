@@ -5,7 +5,7 @@ import data from 'components/Statistics/data.json';
 import { FriendList } from 'components/FriendList/FriendList';
 import friends from 'components/FriendList/friends.json';
 import { TransactionHistory } from 'components/Transactions/TransactionHistory';
-import transactions from '../Transactions/transactions.json';
+import transactions from 'components/Transactions/transactions.json';
 import { Container } from './App.styled';
 
 export const App = () => {
