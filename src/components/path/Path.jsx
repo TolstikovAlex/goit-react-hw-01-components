@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { FriendCard, FriendListBox } from './FriendList.styled';
+import { FriendCard, FriendListBox } from './Path.styled';
 import { FriendListItem } from './FriendListItem';
 export const Path = ({ friends }) => {
   return (
