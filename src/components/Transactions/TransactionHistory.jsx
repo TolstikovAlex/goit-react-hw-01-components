@@ -5,9 +5,9 @@ import {
   TableData,
   TableHead,
   TableRow,
-} from './Money.styled';
+} from './TransactionHistory.styled';
 
-export const Moneyway = ({ transactions }) => {
+export const TransactionHistory = ({ transactions }) => {
   return (
     <Table>
       <TableHead>
