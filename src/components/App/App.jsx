@@ -1,5 +1,5 @@
-import { Blabla } from 'components/bla/Blabla';
-import user from 'components/bla/user.json';
+import { Profile } from 'components/Profile/Profile';
+import user from 'components/Profile/user.json';
 import { DataData } from 'components/datas/datadata';
 import data from 'components/datas/data.json';
 import { Path } from 'components/path/Path';
@@ -11,7 +11,7 @@ import { Container } from './App.styled';
 export const App = () => {
   return (
     <Container>
-      <Blabla user={user} />
+      <Profile user={user} />
       <DataData title="Upload stats" data={data} />
       <Path friends={friends} />
       <Moneyway transactions={transactions} />

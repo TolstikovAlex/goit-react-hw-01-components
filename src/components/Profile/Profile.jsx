@@ -10,9 +10,9 @@ import {
   StatsLabel,
   StatsValue,
   Tag,
-} from './Blabla.styled';
+} from './Profile.styled';
 
-export const Blabla = ({
+export const Profile = ({
   user: { username, tag, location, avatar, stats },
 }) => {
   return (
@@ -41,7 +41,7 @@ export const Blabla = ({
     </ProfileCard>
   );
 };
-Blabla.propTypes = {
+Profile.propTypes = {
   user: PropTypes.shape({
     username: PropTypes.string.isRequired,
     tag: PropTypes.string.isRequired,
