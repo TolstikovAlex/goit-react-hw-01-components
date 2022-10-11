@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
-import { StatsSection, Title } from './Statistics.styles';
+import { StatsSection, Title } from './datadata.styles';
 import { StatisticsList } from './StatisticsList';
 
-export const Statistics = ({ title, data }) => {
+export const DataData = ({ title, data }) => {
   return (
     <StatsSection>
       {title && <Title>{title}</Title>}
@@ -12,7 +12,7 @@ export const Statistics = ({ title, data }) => {
   );
 };
 
-Statistics.propTypes = {
+DataData.propTypes = {
   title: PropTypes.string,
   data: PropTypes.arrayOf(
     PropTypes.exact({
