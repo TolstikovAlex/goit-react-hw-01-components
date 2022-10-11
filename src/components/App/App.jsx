@@ -2,7 +2,7 @@ import { Profile } from 'components/profile/Profile';
 import user from 'components/profile/user.json';
 import { Statistics } from 'components/statistics/Statistics';
 import data from 'components/statistics/data.json';
-import { FriendList } from 'components/friendList/FriendList';
+import { Abcd } from 'components/friendList/Tyhnnjb';
 import friends from 'components/friendList/friends.json';
 import { TransactionsHistory } from 'components/transactions/TransactionsHistory';
 import transactions from 'components/transactions/transactions.json';
@@ -13,7 +13,7 @@ export const App = () => {
     <Container>
       <Profile user={user} />
       <Statistics title="Upload stats" data={data} />
-      <FriendList friends={friends} />
+      <Abcd friends={friends} />
       <TransactionsHistory transactions={transactions} />
     </Container>
   );
