@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-import { FriendCard, FriendListBox } from './Path.styled';
+import { FriendCard, FriendListBox } from './FriendList.styled';
 import { FriendListItem } from './FriendListItem';
-export const Path = ({ friends }) => {
+export const FriendList = ({ friends }) => {
   return (
     <FriendListBox>
       {friends.map(friend => (
@@ -16,7 +16,7 @@ export const Path = ({ friends }) => {
     </FriendListBox>
   );
 };
-Path.propTypes = {
+FriendList.propTypes = {
   friends: PropTypes.arrayOf(
     PropTypes.shape({ id: PropTypes.number.isRequired }),
   ),
